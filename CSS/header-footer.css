@@ -1,0 +1,161 @@
+@import url(./reset.css);
+@import url(./variables.css);
+
+/* -------------------- */
+/* HEADER - DESKTOP */
+/* -------------------- */
+
+body{
+    max-width: 100%;
+}
+
+header{
+    background-color: var(--color-blue);
+    padding: var(--space-m);
+    border-bottom: 1px solid var(--color-black);
+    font-family: var(--font-head);
+}
+
+.navigation{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-header{
+    height: 5rem;
+    width: auto;
+    align-items: flex-start;
+}
+
+.navigation-links{
+    display: flex;
+    gap: var(--space-xl);
+    list-style: none;
+}
+
+.navigation-links a {
+    font-family: var(--font-secondary);
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+/* Hide menu icon on desktop */
+.hamburger-button{
+    display: none;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* -------------------- */
+/* HEADER - Mobile */
+/* -------------------- */
+@media (max-width: 768px){
+
+
+/* Navigation buttons hidden */
+.navigation-links{
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-blue);
+
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-l);
+
+    padding: var(--space-xl) 0;
+    border-bottom: 1px solid black;
+}
+}
+/* -------------------- */
+/* FOOTER - DESKTOP */
+/* -------------------- */
+
+footer{
+    background-color: var(--color-blue);
+    color: white;
+    padding: var(--space-xl) var(--space-l);
+    font-family: var(--font-secondary);
+}
+
+.footer-content{
+    max-width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-xl);
+}
+
+.logo-footer{
+    height: 6rem;
+    width: auto;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xl);
+    flex: 1;
+    margin-top: 2rem;
+}
+
+.footer-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.footer-address{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1.2rem;
+}
+
+/* -------------------- */
+/* FOOTER - Mobile */
+/* -------------------- */
+
+@media (max-width: 768px){
+
+.footer-content{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-address{
+    text-align: center;
+}
+
+
+}
+
+/* -------------------- */
+/* BOTH - Mobile */
+/* -------------------- */
+
+@media (max-width: 768px){
+
+.footer-content, .navigation{
+    max-width: 100%;
+    width: 100%;
+    padding-left: var(--space-l);
+    padding-right: var(--space-l);
+}
+
+}

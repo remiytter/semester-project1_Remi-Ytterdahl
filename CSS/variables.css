@@ -2,13 +2,18 @@
 /* This could be colors, fonts, or padding sizes! */
 
 :root {
-  --color-blue: #59AC77;
-  --color-green: #FFD5D5;
-  --color-yellow: #FDAAAA;
-  --color-purple: #3A6F43;
+  --color-blue: #2979FF;
+  --color-green: #00C853;
+  --color-yellow: #FFD600;
+  --color-purple: #6200EA;
   --color-black: #212121;
 
   --font-head: 'Poppins', sans-serif;
   --font-secondary: 'Inter', sans-serif;
   
+
+  --space-s: 0.5rem;
+  --space-m: 1rem;
+  --space-l: 1.5rem;
+  --space-xl: 2rem;
 }
