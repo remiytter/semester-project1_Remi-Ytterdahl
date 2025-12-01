@@ -5,8 +5,9 @@
 /* HEADER - DESKTOP */
 /* -------------------- */
 
-body{
-    max-width: 100%;
+html, body{
+    width: 100%;
+    overflow-x: hidden;
 }
 
 header{
@@ -44,16 +45,37 @@ header{
     color: var(--color-black);
 }
 
-/* Hide menu icon on desktop */
-.hamburger-button{
+.navigation-links a:hover{
+    color: white;
+}
+
+/* Hamburger/dropdown menu */
+
+#hamburger-button{
+    font-size: 4rem;
     display: none;
 }
 
-.menu-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
+#menu-checkbox{
+    display: none;
 }
+
+@media (max-width: 768px){
+
+#hamburger-button{
+    display: flex;
+}
+
+.navigation-links{
+    display: none;
+}
+
+#menu-checkbox:checked ~ .navigation-links{
+    display: block;
+}
+
+}
+
 
 /* -------------------- */
 /* HEADER - Mobile */
@@ -142,20 +164,5 @@ footer{
     text-align: center;
 }
 
-
-}
-
-/* -------------------- */
-/* BOTH - Mobile */
-/* -------------------- */
-
-@media (max-width: 768px){
-
-.footer-content, .navigation{
-    max-width: 100%;
-    width: 100%;
-    padding-left: var(--space-l);
-    padding-right: var(--space-l);
-}
 
 }

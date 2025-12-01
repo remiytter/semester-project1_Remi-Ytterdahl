@@ -13,8 +13,9 @@
         <nav class="navigation">
             <img src="assets/images/museum-logo.jpg" alt="Community science museum logo" class="logo-header" />
             
-            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-            
+            <input type="checkbox" id="menu-checkbox">
+            <label for="menu-checkbox" id="hamburger-button">☰</label>
+
             <ul class="navigation-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="explore.html">Explore</a></li>
@@ -29,8 +30,8 @@
         <h1>Explore together!</h1>
 
         <div class="buttons">
-            <button><a href="info.html">Visit us</a></button>
-            <button><a href="contact.html">Book tour</a></button>
+            <a href="info.html" class="btn">Visit us</a>
+            <a href="contact.html" class="btn">Book tour</a>
         </div>
         
         <div class="subjects">
@@ -72,7 +73,8 @@
 
     </main>
 
-    <footer class="footer-content">
+    <footer>
+        <div class="footer-content">
         <img src="assets/images/museum-logo.jpg" alt="Community science museum logo" class="logo-footer">
         <div class="footer-links">
             <a href="contact.html">Contact</a>
@@ -87,6 +89,7 @@
             <p>
                 Office: Storgata 12, 0185 Oslo
             </p>
+        </div>
         </div>
     </footer>
     

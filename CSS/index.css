@@ -1,0 +1,112 @@
+@import url(./reset.css);
+@import url(./variables.css);
+
+main{
+    background-color: FAFAFA;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-black);
+    margin-top: 1rem;
+}
+
+
+
+.buttons{
+    display: flex;
+    gap: var(--space-l);
+    margin: var(--space-xl);
+    justify-content: center;
+}
+
+.btn{
+    padding: var(--space-m) var(--space-xl);
+    border: 0.2rem solid var(--color-black);
+    background-color: var(--color-green);
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.2 ease;
+}
+
+.btn:hover{
+    background-color: lightgreen;
+    color: var(--color-black);
+}
+
+.subjects{
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-xl);
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.subject-card{
+    flex: 1;
+    background-color: #E0E0E0;
+    padding: var(--space-l);
+    border: 0.1rem solid var(--color-black);
+    text-align: left;
+    font-family: var(--font-secondary);
+}
+
+.subject-card img{
+    width: 100%;
+    height: auto;
+    margin-bottom: var(--space-m);
+    object-fit: cover;
+}
+
+.subject-card h2{
+    font-family: var(--font-head);
+    font-size: 1.8rem;
+    margin-bottom: var(--space-s);
+    color: var(--color-black);
+}
+
+.subject-card p{
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+
+/* Mobile version */
+
+@media (max-width: 768px) {
+
+.buttons{
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    width: 80%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.subjects{
+    flex-direction: column;
+    gap: var(--space-l);
+    align-items: center;
+}
+
+.subject-card{
+    width: 90%;
+}
+
+
+
+
+}
