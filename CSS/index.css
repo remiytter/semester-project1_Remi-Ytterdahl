@@ -5,6 +5,9 @@ main{
     background-color: FAFAFA;
     display: flex;
     flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-xl) var(--space-l);
 }
 
 h1{
