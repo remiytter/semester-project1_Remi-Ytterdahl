@@ -53,6 +53,7 @@ h1{
     margin-bottom: var(--space-xl);
 }
 
+
 .subject-card{
     flex: 1;
     background-color: #E0E0E0;
@@ -80,6 +81,10 @@ h1{
     font-family: var(--font-secondary);
     font-size: 1.2rem;
     line-height: 1.5;
+}
+
+.subject-card:hover{
+    transform: scale(110%);
 }
 
 .events{

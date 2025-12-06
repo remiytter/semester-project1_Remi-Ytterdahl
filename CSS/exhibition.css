@@ -79,6 +79,10 @@ h1{
     .info-right p,
     .info-right img {
         grid-column: 1;
+    }
 
+    .info-left p,
+    .info-right p{
+        font-size: 1.2rem;
+    }
 }
-

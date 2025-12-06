@@ -1,0 +1,79 @@
+@import url(./reset.css);
+@import url(./variables.css);
+
+main{
+    background-color: FAFAFA;
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-xl) var(--space-l);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-black);
+    margin-bottom: 1rem;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-xl);
+    padding: var(--space-l);
+}
+
+.information{
+    padding: var(--space-l);
+    line-height: 2rem;
+}
+
+.information h2{
+    font-family: var(--font-head);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.information p{
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.opening-hours{
+    background-color: #E0E0E0;
+    padding: var(--space-l);
+    width: 40%;
+    line-height: 3rem;
+    border: 0.1rem solid var(--color-black);
+}
+
+.opening-hours:hover{
+    transform: scale(110%);
+}
+
+.opening-hours h2{
+    font-family: var(--font-head);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.opening-hours li{
+    list-style: none;
+    font-family: var(--font-secondary);
+}
+
+
+@media (max-width: 768px){
+
+    .content{
+        flex-direction: column;
+    }
+
+    .opening-hours{
+        width: 100%;
+    }
+
+}
