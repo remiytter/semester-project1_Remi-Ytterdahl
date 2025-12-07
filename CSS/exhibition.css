@@ -42,21 +42,14 @@ h1{
     border: 0.1rem solid var(--color-black);
 }
 
-.info-left h2, .info-left p{
+.info h2, .info p{
     grid-column: 1;
 }
 
-.info-left img{
+.info img{
     grid-column: 2;
 }
 
-.info-right h2, .info-right p{
-    grid-column: 2;
-}
-
-.info-right img{
-    grid-column: 1;
-}
 
 
 @media (max-width: 768px){
@@ -72,17 +65,10 @@ h1{
         margin-top: var(--space-m);
     }
 
-    .info-left h2,
-    .info-left p,
-    .info-left img,
-    .info-right h2,
-    .info-right p,
-    .info-right img {
+    .info h2,
+    .info p,
+    .info img{
         grid-column: 1;
-    }
-
-    .info-left p,
-    .info-right p{
-        font-size: 1.2rem;
+        font-size: 1.rem;
     }
 }
