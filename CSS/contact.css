@@ -17,3 +17,89 @@ h1{
     color: var(--color-black);
     margin-bottom: 1rem;
 }
+
+.section-top{
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.contact-card,
+.tour-info{
+    height: 100%;
+}
+
+/* Contact card */
+
+.contact-card{
+    background-color: #E0E0E0;
+    padding: var(--space-xl);
+    border: 0.1rem solid var(--color-black);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-l);
+}
+
+.contact-card h2{
+    font-family: var(--font-head);
+    margin-bottom: var(--space-s);
+}
+
+.contact-card p{
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Tour section */
+
+.tour-info{
+    padding: var(--space-xl);
+    border: 0.1rem solid var(--color-black);
+}
+
+.tour-info h2{
+    font-family: var(--font-head);
+    margin-bottom: var(--space-m);
+}
+
+.tour-info p{
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--color-black);
+}
+
+/* Information section */
+
+.information{
+    padding: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.information h2{
+    font-family: var(--font-head);
+    margin-top: var(--space-l);
+    margin-bottom: var(--space-s);
+}
+
+.information p{
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px){
+
+    .contact-card,
+    .tour-info,
+    .information{
+        padding: var(--space-l);
+    }
+
+    .section-top{
+        grid-template-columns: 1fr;
+    }
+
+}
