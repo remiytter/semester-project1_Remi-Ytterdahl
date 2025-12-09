@@ -16,6 +16,7 @@ h1{
     align-items: center;
     color: var(--color-black);
     margin-bottom: 1rem;
+    font-family: var(--font-head);
 }
 
 .content{
@@ -48,10 +49,7 @@ h1{
     width: 40%;
     line-height: 3rem;
     border: 0.1rem solid var(--color-black);
-}
-
-.opening-hours:hover{
-    transform: scale(110%);
+    border-radius: 20px;
 }
 
 .opening-hours h2{

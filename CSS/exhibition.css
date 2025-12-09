@@ -16,6 +16,7 @@ h1{
     align-items: center;
     color: var(--color-black);
     margin-bottom: 1rem;
+    font-family: var(--font-head);
 }
 
 .cards{
@@ -25,8 +26,10 @@ h1{
     margin-bottom: var(--space-xl);
     gap: var(--space-xl);
     border: 0.1rem solid var(--color-black);
+    border-radius: 20px;
     background-color: #E0E0E0;
     align-items: start;
+    font-family: var(--font-secondary);
 }
 
 .cards h2{
@@ -39,7 +42,7 @@ h1{
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border: 0.1rem solid var(--color-black);
+    border-radius: 20px;
 }
 
 .info h2, .info p{

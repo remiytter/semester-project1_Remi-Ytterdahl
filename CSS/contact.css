@@ -16,6 +16,7 @@ h1{
     align-items: center;
     color: var(--color-black);
     margin-bottom: 1rem;
+    font-family: var(--font-head);
 }
 
 .section-top{
@@ -39,6 +40,7 @@ h1{
     display: flex;
     flex-direction: column;
     gap: var(--space-l);
+    border-radius: 20px;
 }
 
 .contact-card h2{
@@ -56,7 +58,6 @@ h1{
 
 .tour-info{
     padding: var(--space-xl);
-    border: 0.1rem solid var(--color-black);
 }
 
 .tour-info h2{
