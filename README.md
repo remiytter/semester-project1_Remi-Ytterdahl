@@ -1,26 +1,31 @@
-# semester-project1_Remi-Ytterdahl
-Semester project 1: Website for an interactive science museum called the Community Science Museum
+# Community science museum 
+CSM is a responsive informational website for a fictional science museum aimed at children, families, teachers and researches.
 
-Requirements
-<br>
-Plan the project using a planning board (We recommend GitHub Project). 
+## Description
+This project was created as my Semester Project 1. The goal was to design and build a website for a community science museum using HTML, CSS and GitHub projects. The website presents museum information, exhibitions, visitor details and content for different target groups. 
 
-The site must have a design that appeals to the target audience. 
+## Built with
+- HTML
+- CSS
 
-The site must have at least four to six pages for individuals and at least six for a team of two. 
+## Features 
+- Responsive design
+- Home page
+- Explore page
+- Exhibition page
+- Visitor information page
+- Contact page
+- Mobile navigation
+- Improved visual consistency and accessibility
 
-Compositional principles, typography, and colour schemes must be considered.
+## Improvements
+For the portfolio assignment, I improved the visual consistency and accessibility of the website. This included updating the navigation and footer colors, improving text contrast, making the address information easier to read and refining the overall styling of cards and sections.
 
-HTML should be semantic and neatly formatted. 
+## Links
+Live site: https://remiytter.github.io/semester-project1_Remi-Ytterdahl/
 
-External CSS stylesheets should follow the DRY principle. 
+GitHub repository: https://github.com/remiytter/semester-project1_Remi-Ytterdahl
 
-The site should load quickly, with image sizes capped at 200kb. 
+##Reflection
+This project helped me practice planning, designing and building a complete multi-page website. I focused on creating a clear structure and a responsive layout. The project gave me more confidence in using CSS for layout and styling. For the portfolio improvement, I focused on making the design feel more consistent and improving readability, especially in the header and footer.
 
-WCAG principles must be applied to hierarchy, navigation, and colour usage. 
-
-The site must be responsive, attractive, and user-friendly across devices. 
-
-SEO practices such as meta tags and alt text must be implemented.
-
-Using the template provided, write a report discussing what went well and what did not in the development process.
