@@ -2,7 +2,7 @@
 @import url(./variables.css);
 
 main{
-    background-color: FAFAFA;
+    background-color: var(--color-background);
     display: flex;
     flex-direction: column;
     max-width: 1200px;
@@ -19,23 +19,24 @@ h1{
     font-family: var(--font-head);
 }
 
-.cards{
+.cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: var(--space-xl);
     margin-bottom: var(--space-xl);
     gap: var(--space-xl);
-    border: 0.1rem solid var(--color-black);
+    border: 1px solid var(--color-card-border);
     border-radius: 20px;
-    background-color: #E0E0E0;
+    background-color: var(--color-card);
     align-items: start;
     font-family: var(--font-secondary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.cards h2{
+.cards h2 {
     font-family: var(--font-head);
-    font-size: 1.rem;
-    line-height: 1.6;
+    font-size: 1.8rem;
+    line-height: 1.4;
 }
 
 .cards img{
@@ -72,6 +73,6 @@ h1{
     .info p,
     .info img{
         grid-column: 1;
-        font-size: 1.rem;
+        font-size: 1rem;
     }
 }

@@ -2,7 +2,7 @@
 @import url(./variables.css);
 
 main{
-    background-color: FAFAFA;
+    background-color: var(--color-background);
     display: flex;
     flex-direction: column;
     max-width: 1200px;
@@ -38,12 +38,13 @@ h1{
     font-weight: 600;
     font-size: 1.5rem;
     cursor: pointer;
-    transition: 0.2 ease;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .btn:hover{
     background-color: lightgreen;
     color: var(--color-black);
+    transform: translateY(-2px);
 }
 
 .subjects{
@@ -57,11 +58,14 @@ h1{
 
 .subject-card{
     flex: 1;
-    background-color: #E0E0E0;
+    background-color: var(--color-card);
     padding: var(--space-l);
     text-align: left;
     font-family: var(--font-secondary);
     border-radius: 20px;
+    border: 1px solid var(--color-card-border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .subject-card img{
@@ -84,8 +88,9 @@ h1{
     line-height: 1.5;
 }
 
-.subject-card:hover{
-    transform: scale(102%);
+.subject-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
 .events{
@@ -96,9 +101,9 @@ h1{
     margin-bottom: var(--space-xl);
 }
 
-.event-card{
+.event-card {
     flex: 1;
-    background-color: #E0E0E0;
+    background-color: var(--color-card);
     padding: var(--space-l);
     max-height: 250px;
     display: flex;
@@ -106,7 +111,8 @@ h1{
     justify-content: space-between;
     font-family: var(--font-secondary);
     border-radius: 20px;
-
+    border: 1px solid var(--color-card-border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .event-card h2{

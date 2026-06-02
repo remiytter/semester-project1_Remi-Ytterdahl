@@ -8,9 +8,12 @@
   --color-purple: #6200EA;
   --color-black: #212121;
 
+  --color-background: #FAFAFA;
+  --color-card: #F1F3F5;
+  --color-card-border: #D0D7DE;
+
   --font-head: 'Poppins', sans-serif;
   --font-secondary: 'Inter', sans-serif;
-  
 
   --space-s: 0.5rem;
   --space-m: 1rem;

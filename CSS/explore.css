@@ -2,7 +2,7 @@
 @import url(./variables.css);
 
 main{
-    background-color: FAFAFA;
+    background-color: var(--color-background);
     display: flex;
     flex-direction: column;
     max-width: 1200px;
@@ -25,9 +25,10 @@ h1{
     padding: var(--space-xl);
     margin-bottom: var(--space-xl);
     gap: var(--space-l);
-    border: 0.1rem solid var(--color-black);
+    border: 0.1rem solid var(--color-card-border);
     border-radius: 20px;
-    background-color: #E0E0E0;
+    background-color: var(--color-card);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .section h2{

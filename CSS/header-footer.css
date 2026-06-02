@@ -42,18 +42,20 @@ header{
     font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
-    color: var(--color-black);
+    color: white;
 }
 
-.navigation-links a:hover{
-    color: white;
+.navigation-links a:hover {
+    color: var(--color-yellow);
 }
 
 /* Hamburger/dropdown menu */
 
-#hamburger-button{
+#hamburger-button {
     font-size: 4rem;
     display: none;
+    color: white;
+    cursor: pointer;
 }
 
 #menu-checkbox{
@@ -137,17 +139,25 @@ footer{
 }
 
 .footer-links a{
-    color: var(--color-black);
+    color: white;
     font-weight: bold;
     text-decoration: none;
     font-size: 1.3rem;
 }
 
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
 .footer-address{
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
     margin-top: 1.2rem;
-    color: var(--color-black);
+    color: white;
+}
+
+.footer-address p{
+    margin-bottom: 0.5rem;
 }
 
 /* -------------------- */
