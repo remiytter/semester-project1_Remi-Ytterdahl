@@ -20,6 +20,9 @@ This project was created as my Semester Project 1. The goal was to design and bu
 - CSS
 - Figma
 
+## Live site
+https://remiytter.github.io/semester-project1_Remi-Ytterdahl/
+
 ## Contact
 [LinkedIn](https://www.linkedin.com/in/remi-ytterdahl/?locale=en)
 
